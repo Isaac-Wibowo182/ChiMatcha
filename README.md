@@ -3,7 +3,7 @@
 Proyek aplikasi ChiMatcha dengan Figma dan Android Studio.
 
 ## Link Figma
-Link
+https://www.figma.com/design/Gn7FKAnoDbQIxrFv7PFkgC/UX-AoL?node-id=0-1&t=SyMNRFky5OHcjy7R-1
 
 1.Cara clone repository ke android Studio
 
