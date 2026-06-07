@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F9">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerCard"
+        android:layout_width="418dp"
+        android:layout_height="78dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_header"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toTopOf="@+id/headerCard"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgBranches"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/branch_bali"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/headerCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/tvBranchesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi Matcha Bali"
+        android:textSize="36sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgBranches"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBranchesName"
+        app:layout_constraintStart_toStartOf="@id/tvBranchesName"/>
+    <TextView
+        android:id="@+id/tvLocationDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Petitenget No. 88, Seminyak, Badung"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationTitle"
+        app:layout_constraintStart_toStartOf="@id/tvLocationTitle"/>
+    <TextView
+        android:id="@+id/tvOPTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opening Hours:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationDetail"
+        app:layout_constraintStart_toStartOf="@id/tvLocationDetail"/>
+    <TextView
+        android:id="@+id/tvOPDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08.00 – 22.00 WITA"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvOPTitle"
+        app:layout_constraintStart_toStartOf="@id/tvOPTitle"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#B9ECC7"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/backitem"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:paddingStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
