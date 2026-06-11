@@ -45,16 +45,15 @@ public class ItemActivity
 
         navBranch =
                 findViewById(
-                        R.id.navBranch);
+                        R.id.navBranches);
 
-        // DATA
         list.add(new MatchaModel(
                 "Matcha Cake",
                 R.drawable.matcha_cake));
 
         list.add(new MatchaModel(
                 "Pure Matcha",
-                R.drawable.pure_matcha));
+                R.drawable.matcha_pure));
 
         list.add(new MatchaModel(
                 "Matcha Sundae",
@@ -78,7 +77,6 @@ public class ItemActivity
         recyclerView
                 .setAdapter(adapter);
 
-        // NAVIGATION
         navHome.setOnClickListener(v -> {
 
             startActivity(

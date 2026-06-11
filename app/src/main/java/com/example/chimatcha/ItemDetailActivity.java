@@ -41,7 +41,6 @@ public class ItemDetailActivity
 
         initViews();
 
-        // receive data
         String name =
                 getIntent()
                         .getStringExtra("name");

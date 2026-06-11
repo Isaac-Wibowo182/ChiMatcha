@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
 
             Intent intent =
                     new Intent(LoginActivity.this,
-                            MainActivity.class);
+                            HomeActivity.class);
 
             intent.putExtra("username",
                     username);
@@ -65,11 +65,10 @@ public class LoginActivity extends AppCompatActivity {
 
         tvSignup.setOnClickListener(v -> {
 
-            Intent intent =
-                    new Intent(LoginActivity.this,
-                            RegisterActivity.class);
-
-            startActivity(intent);
+            startActivity(
+                    new Intent(
+                            this,
+                            RegisterActivity.class));
         });
     }
 }
